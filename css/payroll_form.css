@@ -48,7 +48,7 @@ body {
 
 .form-content {
     min-height: calc(100%-80px);
-    background-color: #829b64;
+    background-color: #93a77a;
     display: flex;
     justify-content: center;
     align-items: center;
