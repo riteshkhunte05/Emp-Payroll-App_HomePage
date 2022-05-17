@@ -1,11 +1,12 @@
 html body {
     margin: 0;
     height: 100%;
+    background-color: #829b64;
   }
   
   .header {
     padding: 15px 0;
-    background-color: #ffffff;
+    background-color: #81a59c;
   }
   
   .header-content {
@@ -13,14 +14,14 @@ html body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid rgb(96, 131, 96);
   }
   
   .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid rgb(112, 134, 112);
     width: 80%;
   }
   
@@ -32,7 +33,7 @@ html body {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
+    color: #467244;
     text-transform: capitalize;
   }
   
@@ -42,4 +43,44 @@ html body {
   
   * {
     box-sizing: border-box;
+  }
+  .header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  
+  .emp-detail-text{
+    font: normal normal bold 24px/25px Roboto;
+    letter-spacing: 0px;
+    color: #3a3d3f;
+    opacity: 1;
+  }
+  
+  .emp-count{
+    background-color: #423e39;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .add-button{
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    background: #8d6d44 0% 0% no-repeat padding-box;
+    border: 1;
+    border-radius: 2px;
+    padding: 5px 18px;
+    outline: wheat;
+    cursor: pointer;
+    text-decoration: burlywood;
   }
