@@ -1,6 +1,14 @@
+let empPayrollList;
 window.addEventListener("DOMContentLoaded", (event) => {
+    empPayrollList=getEmployeePayrollDataFromStorage();
+    document.querySelector('.emp-count').textContent=empPayrollList.length;
     createInnerHtml();
 });
+
+const getEmployeePayrollDataFromStorage = () =>{
+    return localStorage.getItem('EmployeePayrollList')?
+    JSON.parse(localStorage.getItem('EmployeePayrollList')):[];
+}
 
 //Template literal ES6 feature
 const createInnerHtml = () => {
@@ -32,7 +40,7 @@ const createInnerHtml = () => {
 const createEmployeePayrollJSON = () => {
     let empPayrollListLocal = [{
             _name: 'MSDhoni',
-            _gender: 'male',
+            _gender: 'Male',
             _department: [
                 'Engineering',
                 'Finance'
@@ -44,8 +52,8 @@ const createEmployeePayrollJSON = () => {
             _profilePic: "/assets/M1.png"
         },
         {
-            _name: 'Nayanathara',
-            _gender: 'female',
+            _name: 'SanaMir',
+            _gender: 'Female',
             _department: [
 
                 'Sales'
